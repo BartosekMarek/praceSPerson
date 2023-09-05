@@ -1,4 +1,4 @@
-package cz.bartosek.pracesperson;
+package cz.bartosek.prace_s_person;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

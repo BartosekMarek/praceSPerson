@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11efe3dd-ba95-498b-8c56-757c359a98cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/postgresql-42.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/MySessionBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="11efe3dd-ba95-498b-8c56-757c359a98cd" name="Changes" comment="vytvoreni databaze a zahajeni definice entity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/PersonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/SexEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pracesperson/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pracesperson/HelloResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/HelloResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/HelloResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/HelloResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/MySessionBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/MySessionBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/bartosek/pracesperson/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,7 +56,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Development/Git/batJava/praceSPerson/postgresql-42.6.0.jar",
+    "last_opened_file_path": "C:/Development/Git/VzorZPrace/rssz-backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,8 +82,19 @@
       <option name="presentableId" value="Default" />
       <updated>1693823759252</updated>
       <workItem from="1693823760714" duration="7672000" />
-      <workItem from="1693848312977" duration="360000" />
+      <workItem from="1693848312977" duration="903000" />
+      <workItem from="1693849241028" duration="216000" />
+      <workItem from="1693925419829" duration="5699000" />
     </task>
+    <task id="LOCAL-00001" summary="vytvoreni databaze a zahajeni definice entity">
+      <option name="closed" value="true" />
+      <created>1693849073552</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693849073552</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,5 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="vytvoreni databaze a zahajeni definice entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="vytvoreni databaze a zahajeni definice entity" />
   </component>
 </project>
