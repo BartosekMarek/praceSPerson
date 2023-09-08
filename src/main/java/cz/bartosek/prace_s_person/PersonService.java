@@ -1,5 +1,6 @@
 package cz.bartosek.prace_s_person;
 
+import jakarta.ejb.Stateless;
 import jakarta.transaction.Transactional;//fakt jakarta? nemelo by z javax
 
 import javax.persistence.EntityManager;
@@ -7,7 +8,8 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class PersonService {
+@Stateless
+public class PersonService implements PersonRepository{
 
     @PersistenceContext
     private EntityManager entityManager;
@@ -25,6 +27,12 @@ public class PersonService {
         return entityManager.find(Person.class, id);
     }
 
+    @Override
+    public void createPerson(String name, String sex, String birthday) {
+        Person personTemp = new Person(name,sex,birthday);
+        createPerson(personTemp);
+    }
+
     @Transactional
     public void deletePerson(Long id){
         Person personTemp = this.getPersonById(id);
@@ -38,13 +46,15 @@ public class PersonService {
         return entityManager.createQuery("SELECT p FROM Person p", Person.class).getResultList();
     }
 
+    @Override
+    public void updatePerson(long personId, String name) {
+
+    }
+
     public List<Person> getPersonForName(String name){
         TypedQuery<Person> query = entityManager.createQuery("SELECT p FROM Person p WHERE p.name = :tempName", Person.class);
         query.setParameter("tempName", name);
         return query.getResultList();
     }
-
-
-
 
 }
