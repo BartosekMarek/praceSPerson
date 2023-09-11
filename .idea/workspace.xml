@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11efe3dd-ba95-498b-8c56-757c359a98cd" name="Changes" comment="uprava">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/jboss-app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/webServices/praceSPersonWebService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/bartosek/prace_s_person/Person.java" afterDir="false" />
-    </list>
+    <list default="true" id="11efe3dd-ba95-498b-8c56-757c359a98cd" name="Changes" comment="opravy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +85,7 @@
       <workItem from="1694188065304" duration="5671000" />
       <workItem from="1694248516757" duration="2552000" />
       <workItem from="1694331850847" duration="1247000" />
-      <workItem from="1694404677988" duration="598000" />
+      <workItem from="1694404677988" duration="3307000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni databaze a zahajeni definice entity">
       <option name="closed" value="true" />
@@ -130,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694160905171</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="opravy">
+      <option name="closed" value="true" />
+      <created>1694410038652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694410038652</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +162,7 @@
     <MESSAGE value="pridani predbeznych trid pro praci s daty" />
     <MESSAGE value="pridani changelogu" />
     <MESSAGE value="uprava" />
-    <option name="LAST_COMMIT_MESSAGE" value="uprava" />
+    <MESSAGE value="opravy" />
+    <option name="LAST_COMMIT_MESSAGE" value="opravy" />
   </component>
 </project>
