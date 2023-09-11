@@ -14,9 +14,5 @@ public interface PersonRepository {
 
     public void updatePerson(long personId, String name);
 
-    //    public Person getPersonById(Long id);
-
-    //    public void updatePerson(Person person);
-
-    //    public void createPerson(Person person);
+    public Person getPersonById(Long id);
 }

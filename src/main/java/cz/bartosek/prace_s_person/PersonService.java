@@ -1,7 +1,7 @@
 package cz.bartosek.prace_s_person;
 
 import jakarta.ejb.Stateless;
-import jakarta.transaction.Transactional;//fakt jakarta? nemelo by z javax
+import jakarta.transaction.Transactional;//fakt jakarta? nemelo by z javax?
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -18,16 +18,13 @@ public class PersonService implements PersonRepository{
     public void createPerson(Person person){
         entityManager.persist(person);
     }
-    @Transactional
-    public void updatePerson(Person person){
-        entityManager.merge(person);
-    }
 
     public Person getPersonById(Long id){
         return entityManager.find(Person.class, id);
     }
 
     @Override
+    @Transactional
     public void createPerson(String name, String sex, String birthday) {
         Person personTemp = new Person(name,sex,birthday);
         createPerson(personTemp);
@@ -47,8 +44,13 @@ public class PersonService implements PersonRepository{
     }
 
     @Override
+    @Transactional
     public void updatePerson(long personId, String name) {
-
+        Person personTemp = this.getPersonById(personId);
+        if(personTemp != null){
+            personTemp.setName(name);
+            entityManager.merge(personTemp);
+        }
     }
 
     public List<Person> getPersonForName(String name){

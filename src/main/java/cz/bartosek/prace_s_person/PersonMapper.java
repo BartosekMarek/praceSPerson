@@ -1,5 +1,7 @@
-package cz.bartosek.prace_s_person;
+//neni potreba dle zadani - neni vyzadovani personDTO
 
-
-public class PersonMapper {
-}
+//package cz.bartosek.prace_s_person;
+//
+//
+//public class PersonMapper {
+//}
